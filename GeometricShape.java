@@ -8,6 +8,11 @@ package groupass1;
  *
  * @author user
  */
-public class NewClass {
+public interface GeometricShape {
     
+    //calculate the surface area of the shape and return it as double
+    public double calculateSurfaceArea();
+    
+    //calculate the volume of the shape and return it as double
+    public double calculateVolume();
 }
