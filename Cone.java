@@ -18,6 +18,22 @@ public class Cone {
         this.height = height;
     }
     
+    public void setRadius(double radius){
+        this.radius =radius;
+    }
+    
+    public void setHeight(){
+        this.height = height;
+    }
+    
+    public double getRadius(){
+        return radius;
+    }
+    
+    public double getHeight(){
+        return height;
+    }
+    
     public double calculateVolume(){
         return Math.PI*Math.pow(radius,2)*height/3  ;
     }
@@ -25,11 +41,5 @@ public class Cone {
     public double calculateSurfaceArea(){
         double bracket = radius + Math.sqrt(Math.pow(radius,2)+Math.pow(height,2));
         return Math.PI*radius*bracket;
-    }
-    
-    public static void main(String[] args) {
-        Cone a = new Cone(5,10);
-        System.out.println("Volume: "+a.calculateVolume() );
-        System.out.println("Surface Area: "+ a.calculateSurfaceArea());
     }
 }
